@@ -36,13 +36,15 @@ import {
   Zap, ShieldCheck, Camera, Upload, Lock, RefreshCw, 
   Smartphone, Briefcase, Check, MapPin, Server, Activity 
 } from 'lucide-react';
-
 // --- 1. CONFIGURATION ---
 
-const SUPABASE_URL = https://supabase.com/dashboard/project/yfsozkelofdrnyondmwa/settings/api-keys/legacy
-const SUPABASE_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlmc296a2Vsb2Zkcm55b25kbXdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA5MzM4NjgsImV4cCI6MjA4NjUwOTg2OH0.5XC0G3qUTi50-Em1uvEIQYMUxfTcHd8BOrb35rZUquo
+// FIXED: Added quotes and formatted the URL correctly
+const SUPABASE_URL = 'https://yfsozkelofdrnyondmwa.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlmc296a2Vsb2Zkcm55b25kbXdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA5MzM4NjgsImV4cCI6MjA4NjUwOTg2OH0.5XC0G3qUTi50-Em1uvEIQYMUxfTcHd8BOrb35rZUquo';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+
 
 // --- 2. LOGIC LAYERS ---
 
